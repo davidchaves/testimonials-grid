@@ -1,0 +1,191 @@
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --dark-grayish-blue: hsl(217, 19%, 35%);
+    --dark-blackish-blue: hsl(219, 29%, 14%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 1.3rem;
+    background-color: #404040;
+}
+
+main {
+    height: 100vh;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.grid-wrapper {
+    display: grid;
+    height: 100%;
+    gap: 2rem;
+    color: #FFF;
+}
+
+[class*="grid-0"] {
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: 2rem;
+    opacity: .7;
+    transform: scale(0.98);
+    transition: all .35s linear;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.34);
+}
+
+[class*="grid-0"]:focus {
+    opacity: 1;
+    transform: scale(1.0);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.34);
+}
+
+.grid-wrapper .grid-01 {
+    background: url('../images/bg-pattern-quotation.svg') no-repeat var(--Moderate-violet);
+    background-position: top 0 right 10%;
+    background-size: 12rem;
+}
+
+.grid-02 {
+    background: #C51A6F;
+}
+
+.grid-03 {
+    background-color: #00918C;
+}
+
+.grid-04 {
+    background: #41506f;
+}
+.grid-05 {
+    background: #FFF;
+}
+div.profile {
+    position: relative;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    image-rendering: crisp-edges;
+    object-fit: contain;
+    outline: 2px solid rgba(255,255,255,0.3); 
+}
+
+.profile span {
+    position: absolute;
+    top: 1.1rem;
+    left: 7rem;
+    text-align: center;
+    letter-spacing: .2rem;
+    color: #FFF;
+}
+
+.profile small {
+    position: absolute;
+    bottom: 1.6rem;
+    letter-spacing: .1rem;
+    left: 7rem;
+    color: rgba(255,255,255,0.4); 
+}
+
+[class*="grid-0"] .subject {
+    margin: 1rem 0 1rem;
+}
+
+[class*="grid-0"] p {
+    color: var(--Light-gray);
+}
+
+article.grid-05 span {
+    color: var(--dark-blackish-blue)
+}
+
+article.grid-05 small {
+    color: var(--Light-gray)
+}
+
+article.grid-05 h2 {
+    color: var(--dark-blackish-blue)
+}
+
+article.grid-05 p {
+    color: var(--dark-grayish-blue)
+}
+
+footer {
+    font-weight: 600;
+    color: gray;
+    opacity: .5;
+    text-align: center;
+}
+
+.heart {
+    color: red;
+}
+
+footer .name{
+    color: #FFF;
+}
+
+
+
+/* Medias Queries */
+@media screen and (min-width: 900px){
+    .grid-template-area {
+        display: grid;
+        background-color: #404040;
+        grid-template-areas:
+        "grid01 grid01 grid02 grid05"
+        "grid03 grid04 grid04 grid05"
+        "grid06 grid06 grid06 grid06";
+    }
+}
+
+@media screen and (min-width: 900px){
+    .grid-01 {
+        grid-area: grid01;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .grid-02 {
+        grid-area: grid02;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .grid-03 {
+        grid-area: grid03;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .grid-04 {
+        grid-area: grid04;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .grid-05 {
+        grid-area: grid05;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .grid-06 {
+        grid-area: grid06;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .grid-06:hover {
+        opacity: 1;
+    }
+}
