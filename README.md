@@ -1,6 +1,6 @@
 ## Welcome !👋
 
-Thanks for checking out this [Frontend Mentor](https://www.frontendmentor.io/) coding. This is my solution to the [ `<a src="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7" target="_blank">Testimonials grid section</a>`](). I have to build this application using only the preview images and the especifications.
+Thanks for checking out this [Frontend Mentor](https://www.frontendmentor.io/) coding. This is my solution to the [Testimonials grid section](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). I have to build this application using only the preview images and the especifications.
 
 <h1 align="center">Testimonials grid section</h1>
 
@@ -13,7 +13,7 @@ Contents
 - [🚀 Tech](#tech)
 - [🎨 Style Guide](#style-guide)
   - [Colors:](#colors)
-  - [Font types:](#font-types)
+  - [Typography:](#typography)
 - 📌[Features](#features)
 - [📧 Author](#author)
 
